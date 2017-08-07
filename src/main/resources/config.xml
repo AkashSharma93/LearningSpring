@@ -18,4 +18,10 @@
     <bean id="uniquePerf" class="Juggler" scope="prototype" />
 
     <bean id="auditorium" class="Auditorium" init-method="turnOnLights" destroy-method="turnOffLights"/>
+    <bean id="Kenny" class="Instrumentalist">
+        <property name="song" value="Sweet Child O' Mine" />
+        <property name="age" value="30" />
+        <property name="instrument" ref="piano" />
+    </bean>
+    <bean id="piano" class="Piano" />
 </beans>

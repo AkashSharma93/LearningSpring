@@ -27,5 +27,7 @@ public class MainClass {
         System.out.println("p3 == p4: " + (p3 == p4));
 
         Auditorium a = (Auditorium) ctx.getBean("auditorium");
+        p = (Performer) ctx.getBean("Kenny");
+        p.perform();
     }
 }
