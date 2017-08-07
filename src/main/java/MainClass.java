@@ -11,5 +11,8 @@ public class MainClass {
         p.perform();
         p = (Juggler) ctx.getBean("Mike");
         p.perform();
+
+        Stage s = (Stage) ctx.getBean("Stage");
+        s.announce();
     }
 }

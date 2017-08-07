@@ -12,4 +12,5 @@
     <bean id="sonnet29" class="Poem">
         <constructor-arg value="sonnet29" />
     </bean>
+    <bean id="Stage" class="Stage" factory-method="getInstance"/>
 </beans>
