@@ -15,4 +15,6 @@
     <bean id="Stage" class="Stage" factory-method="getInstance"/>
     <bean id="dupPerf" class="Juggler" />
     <bean id="uniquePerf" class="Juggler" scope="prototype" />
+
+    <bean id="auditorium" class="Auditorium" init-method="turnOnLights" destroy-method="turnOffLights"/>
 </beans>
