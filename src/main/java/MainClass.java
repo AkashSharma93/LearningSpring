@@ -33,5 +33,7 @@ public class MainClass {
         p.perform();
         p = (Performer) ctx.getBean("terseKenny");
         p.perform();
+        p = (Performer) ctx.getBean("simuPerf");
+        p.perform();
     }
 }

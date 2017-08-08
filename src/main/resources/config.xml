@@ -34,4 +34,12 @@
         </property>
     </bean>
     <bean id="terseKenny" class="Instrumentalist" p:song="Estrange" p:instrument-ref="piano" />
+    <bean id="simuPerf" class="MultiPerformer">
+        <property name="instruments">
+            <list>
+                <ref bean="piano" />
+                <bean class="Guitar" />
+            </list>
+        </property>
+    </bean>
 </beans>
