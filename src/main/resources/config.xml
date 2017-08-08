@@ -24,4 +24,11 @@
         <property name="instrument" ref="piano" />
     </bean>
     <bean id="piano" class="Piano" />
+    <bean id="greedyKenny" class="Instrumentalist">
+        <property name="song" value="November Rain" />
+        <property name="age" value="20" />
+        <property name="instrument">
+            <bean class="Piano" />
+        </property>
+    </bean>
 </beans>

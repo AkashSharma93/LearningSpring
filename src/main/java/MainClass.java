@@ -29,5 +29,7 @@ public class MainClass {
         Auditorium a = (Auditorium) ctx.getBean("auditorium");
         p = (Performer) ctx.getBean("Kenny");
         p.perform();
+        p = (Performer) ctx.getBean("greedyKenny");
+        p.perform();
     }
 }
