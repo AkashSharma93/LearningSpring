@@ -35,5 +35,8 @@ public class MainClass {
         p.perform();
         p = (Performer) ctx.getBean("simuPerf");
         p.perform();
+
+        MapPropInst mpi = (MapPropInst) ctx.getBean("mapPropInst");
+        mpi.print();
     }
 }

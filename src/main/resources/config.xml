@@ -42,4 +42,21 @@
             </list>
         </property>
     </bean>
+
+    <bean id="guitar1" class="Guitar" />
+    <bean id="guitar2" class="Guitar" />
+    <bean id="mapPropInst" class="MapPropInst">
+        <property name="map">
+            <map>
+                <entry key="KEY1" value-ref="guitar1" />
+                <entry key="KEY2" value-ref="guitar2" />
+            </map>
+        </property>
+        <property name="prop">
+            <props>
+                <prop key="PROP1">VALUE1</prop>
+                <prop key="PROP2">VALUE2</prop>
+            </props>
+        </property>
+    </bean>
 </beans>
